@@ -8,7 +8,20 @@ The purpose of this file is to document useful workflows for working with Git, R
 - **Confirm the local change propagated to the GitHub remote**. To check if your changes were safely deposited to the remote.
 
 ### R markdown files
-- **Keeping .md files**
+- **Keeping .md files**: When writing a .Rmd file on Rstudio and knitting it, the .md file is created as an intermediate step but is not stored; instead a .html file is generated adn stored locally. If Github is the main place where you store your code, saving a .md file might be useful. It additionally gives you a free webpage for your results/documentation. Another option is to add `output: github_document` to the YAML. 
+- ** Keep things machine- and human-readable, whenever possible**
+
+### R projects
+ - Use the `here` package for building file paths, once you require sub-directories. See examples [here](https://github.com/jennybc/here_here#readme)
+ - Clean out your workspace and restart R and re-run everything periodically
+
+
+### Unconnceted files
+- For a quick, stand-alone document that doesn’t fit neatly into a repository or project (yet), make it a [Gist](https://gist.github.com/).
+
+### File naming and file organisation
+https://github.com/datacarpentry/rr-organization1/tree/27883c8fc4cdd4dcc6a8232f1fe5c726e96708a0/slides/naming-slides
+https://github.com/datacarpentry/rr-organization1/tree/27883c8fc4cdd4dcc6a8232f1fe5c726e96708a0/slides/organization-slides
 
 ### References
 [HappyGituseR](https://happygitwithr.com/existing-github-last.html)
